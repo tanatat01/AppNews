@@ -9,6 +9,7 @@ import { PopularPage } from '../pages/popular/popular'
 import { SciencePage } from '../pages/science/science'
 import { MoviePage } from '../pages/movie/movie'
 import { DetailPage } from '../pages/detail/detail'
+import { HttpModule } from '@angular/http'
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -22,11 +23,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SciencePage,
     MoviePage,
     DetailPage
+   
 
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
